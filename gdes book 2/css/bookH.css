@@ -1,0 +1,201 @@
+/* this is where all of your CSS styles go */
+
+/* Global Styles : DO NOT EDIT */
+
+@font-face {
+	font-family: 'Flink';
+	src: url(../fonts/FlinkRegular.otf);
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.new_font {
+    font-family: Flink;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.new_font2 {
+    font-family: Flink;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.new_font3 {
+    font-family: Flink;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.grid-cont1 {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 60%;
+	top: 20%; /* for optical centering */
+	margin-top: -150px;
+	margin-left: -225px;
+}
+
+.grid-cont21 {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 73%;
+	top: 88%; /* for optical centering */
+	margin-top: -150px;
+	margin-left: -225px;
+	letter-spacing: 23px;
+}
+
+.grid-cont22 {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 85%;
+	top: 86.5%; /* for optical centering */
+	margin-top: -150px;
+	margin-left: -225px;
+	letter-spacing: 23px;
+	animation: red_fade 8s infinite ease;
+}
+
+.grid-cont23 {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 102.5%;
+	top: 85%; /* for optical centering */
+	margin-top: -150px;
+	margin-left: -225px;
+	letter-spacing: 23px;
+}
+
+.grid-cont3 {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 77.5%;
+	top: 100%; /* for optical centering */
+	margin-top: -150px;
+	margin-left: -225px;
+}
+
+.square_b {
+	width: 440px;
+	height: 680px;
+	background: white;
+	position: absolute;
+	left: 35%;
+	top: 28%;
+	margin-left: -150px;
+	margin-top: -150px;
+	border: 1px solid grey;
+}
+
+.circle_r {
+	width: 250px;
+	height: 250px;
+	background: #DA1A29;
+	position: absolute;
+	left: 55%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.circle_r2 {
+	width: 10px;
+	height: 10px;
+	background: #DA1A29;
+	position: absolute;
+	left: 80%;
+	top: 100%;
+	margin-left: -150px;
+	margin-top: -150px;
+	border-radius: 50%;
+	z-index: 1;
+	animation: move_left3 5s infinite ease;
+}
+
+.circle_w {
+	width: 35px;
+	height: 35px;
+	background: white;
+	position: absolute;
+	left: 88%;
+	top: 85%;
+	margin-left: -150px;
+	margin-top: -150px;
+	border-radius: 50%;
+	z-index: 1;
+	animation: move_left2 5s infinite ease;
+}
+
+.semi_b1{
+	position: absolute;
+	margin: auto;
+	top: 300px;
+	right: 0;
+	bottom: 0;
+	left: 25px;
+	width: 300px;
+	height: 300px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 70px 10px 0px 0px #322A29; 
+	transform: rotate(225deg);
+	animation: move_left4 5s infinite ease;
+}
+
+.semi_b2{
+	position: absolute;
+	margin: auto;
+	top: 225px;
+	right: 0;
+	bottom: 0;
+	left: -100px;
+	width: 200px;
+	height: 300px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 90px 10px 0px 0px #322A29; 
+	transform: rotate(225deg);
+	animation: move_left1 5s infinite ease;
+}
+
+@keyframes move_left1 {
+	0% {left: -100px}
+	50% {left: -500px;}
+	100% {left: -100px;}
+}
+
+@keyframes move_left2 {
+	0% {left: 88%;}
+	50% {left: 0%;}
+	100% {left: 88%;}
+}
+
+@keyframes move_left3 {
+	0% {left: 80%;}
+	50% {left: 0%;}
+	100% {left: 80%;}
+}
+
+@keyframes move_left4 {
+	0% {left: 25px;}
+	50% {left: -425px;}
+	100% {left: 25px;}
+}
+
+@keyframes red_fade {
+	0% {color: black}
+	50% {color: red;}
+	100% {color: black}
+}
+
